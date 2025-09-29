@@ -18,7 +18,7 @@ public class Vehiculo {
 
         @Override
         public String toString() {
-            return "El Coche registrado posee una marca de nombre; " + Marca + " Con una velocidad maxima de "
+            return "El Coche registrado posee una marca de nombre: " + Marca + " Con una velocidad maxima de "
                     + velocidadMaxima + " caballos de fuerza y " + numerodePuertas + " puertas";
         }
 
