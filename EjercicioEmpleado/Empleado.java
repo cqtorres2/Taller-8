@@ -2,27 +2,34 @@ public class Empleado {
     String nombre;
     int salario;
 
-    public Empleado(String nombre, int salario) {
-        this.nombre = nombre;
-        this.salario = salario;
-        String mostrarDetalles = "Nombre: " + nombre
-                + " con un salario fijo de " + salario + " actualmente bajo contrato";
+    public void mostrarDetalles() {
+        System.out.println("Nombre: " + nombre
+                + " con un salario fijo de " + salario + " actualmente bajo contrato");
     }
 
-    public class Gerente {
+    public class Gerente extends Empleado {
         public static String mostrarDetalles;
         String departamento;
 
-        public Gerente(String departamento) {
+        public Gerente(String departamento, String nombre, int salario) {
             this.departamento = departamento;
-            String mostrarDetalles = "Nombre: " + nombre
-                    + " con un salario fijo de " + salario + " actualmente bajo contrato en el departamento de "
-                    + departamento + " En el pais de colombia";
+            this.nombre = nombre;
+            this.salario = salario;
+        }
+
+        @Override
+        public void mostrarDetalles() {
+            System.out.println("Nombre: " + nombre
+                    + " con un salario fijo de " + salario + " con localidad en el departamento de " + departamento
+                    + " y actualmente bajo contrato");
+        }
+
+        @Override
+        public String toString() {
+            return "Los datos son: Nombre: " + nombre
+                    + " con un salario fijo de " + salario + " con localidad en el departamento de " + departamento
+                    + " y actualmente bajo contrato";
         }
     }
 
-    @Override
-    public String toString() {
-        return "Los datos son: " + Gerente.mostrarDetalles;
-    }
 }
