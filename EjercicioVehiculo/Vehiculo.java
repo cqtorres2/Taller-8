@@ -3,8 +3,8 @@ public class Vehiculo {
     int velocidadMaxima;
 
     public void Mostrar() {
-        System.out.println("El estudiante de nombre: " + Marca + " cuenta con " + velocidadMaxima
-                + " años de edad");
+        System.out.println("El coche es de la marca: " + Marca + " cuenta con " + velocidadMaxima
+                + " caballos de fuerza");
     }
 
     public class Coche extends Vehiculo {

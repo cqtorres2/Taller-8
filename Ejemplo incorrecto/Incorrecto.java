@@ -1,5 +1,5 @@
 
-public class Incorrecto {
+/*public class Incorrecto {
     private String a;
     private int b;
 
@@ -17,3 +17,4 @@ public class Incorrecto {
         
     }
 }
+*/
